@@ -95,6 +95,8 @@ p{
 
 .button1 {
     background: url("images/plants-vs-zombies.png") no-repeat scroll 0 0 transparent;
+    background-size: 30rem;
+    background-position: 2%;
     filter: brightness(40%);
     background-color: #1c1c1ccc; 
     color: rgb(255, 255, 255); 

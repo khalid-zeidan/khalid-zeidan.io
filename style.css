@@ -12,7 +12,7 @@
     src: url(fonts/Europa-Grotesk-Bold.otf) format("opentype");
 
     font-style: oblique;
-    font-weight: ;
+    font-weight: 300;
 }
 
 /*ffe9be*/
@@ -23,8 +23,10 @@ mark{
 }
 
 body {
-    margin: 20%;
-    background-color: rgb(22, 22, 22);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    background-color: #161616;
 }
 
 h1{
@@ -44,10 +46,78 @@ h2 {
     font-weight: 200;
 }
 
+h3{
+    color: white;
+    font-family: "Europa Grotesk";
+    font-style: italic;
+    font-weight: 200;
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: auto; 
+    width: 22rem;
+}
+
+h4{
+    margin-top: 2%;
+    margin-bottom: -0.75%;
+    color: #ffffff;
+    font-family: "Europa Grotesk";
+    font-style: italic;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
 p{
     color: white;
     font-family: "Europa Grotesk";
     font-style: italic;
     font-weight: 200;
     margin-bottom: 3%;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    background-color: #1c1c1c;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.button1 {
+    background: url("images/plants-vs-zombies.png") no-repeat scroll 0 0 transparent;
+    filter: brightness(40%);
+    background-color: #1c1c1ccc; 
+    color: rgb(255, 255, 255); 
+}
+
+.button1:hover {
+    background-color: #2f2f2f;
+    filter: brightness(85%);
+    color: white;
+}
+
+.wrapper {
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.wrapper > div {
+    flex: 1 1 300px;
+    margin: auto;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
 }

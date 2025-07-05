@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Europa Grotesk";
+/*    src: url(fonts/Europa-Grotesk-Bold.otf) format("opentype");
+    src: url(fonts/Europa-Grotesk-Medium.ttf) format("truetype"), */
+    src: url(fonts/Europa-Grotesk-Medium-Italic.otf) format("opentype");
+    font-style: italic;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Europa Grotesk";
+    src: url(fonts/Europa-Grotesk-Bold.otf) format("opentype");
+
+    font-style: oblique;
+    font-weight: ;
+}
+
+/*ffe9be*/
+
+mark{
+    background-color: #ff5200;
+    color: #000;
+}
+
+body {
+    margin: 20%;
+    background-color: rgb(22, 22, 22);
+}
+
+h1{
+    margin-bottom: -2%;
+    color: #ffffff;
+    font-family: "Europa Grotesk";
+    font-style: italic;
+    font-weight: 200;
+    font-size: 5rem;
+}
+
+h2 {
+    margin-bottom: 3%;
+    color: white;
+    font-family: "Europa Grotesk";
+    font-style: italic;
+    font-weight: 200;
+}
+
+p{
+    color: white;
+    font-family: "Europa Grotesk";
+    font-style: italic;
+    font-weight: 200;
+    margin-bottom: 3%;
+}

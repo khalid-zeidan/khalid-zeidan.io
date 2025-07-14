@@ -22,7 +22,7 @@
 /*ffe9be*/
 
 body {
-    background-color: #686868;
+    background-color: #222;
     margin: 0%;
     max-width: 100%;
 }
@@ -75,6 +75,10 @@ p{
     font-weight: 200;
     margin-bottom: 3%;
 }
+
+ul{
+    padding-left: 0%;
+}
 /*#endregion basic text*/
 
 
@@ -101,6 +105,13 @@ p{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 999;
 }
 
 .HeaderButton{
@@ -112,7 +123,7 @@ p{
     cursor: pointer;
     width: 5rem;
     height: auto;
-    background-color: #161616;
+    background-color: #4e4e4e;
     border-radius: 2rem;
     overflow: hidden;
 }
@@ -139,13 +150,12 @@ h2.HeaderText{
 /*#region MainAboutTextBox*/
 .MainAbout{
     margin-top: -5%;
-    background-color: #161616;
+    background-color: #222;
     overflow: hidden;
     border-radius: 0rem;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
 }
-
 .MainAboutTextBox{
     margin-left: 10%;
     margin-right: 10%;
@@ -169,17 +179,35 @@ h2.MainBodyText{
     
 }
 
+/*#region experience*/
+.ExperienceContainer{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 6.5%;
+}
+
+.ExperienceGrid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ExperienceGrid.Experience{
+    text-align: right;
+}
+/*#endregion experience*/
+
+/*#region projects*/
 .ProjectsContentBox{
     margin-top: -3%;
     margin-bottom: 25%;
     margin-left: 10%;
     margin-right: 10%;
 }
-
 .ProjectGrid{
     margin-top: 3%;
 }
-
 .ProjectButton{
     border: none;
     text-align: center;
@@ -189,22 +217,22 @@ h2.MainBodyText{
     cursor: pointer;
     width: 5rem;
     height: auto;
-    background-color: #4c4c4c;
     border-radius: 2rem;
     overflow: hidden;
-}
 
+    filter: brightness(35%);
+}
 .ProjectButton:hover {
-    background-color: #2f2f2f;
     filter: brightness(85%);
     color: white;
 }
-
 .ProjectButton.PVZ{
     width: 20rem;
     height: 20rem;
     background-image: url(images/plants-vs-zombies.png);
     background-size: 40rem;
     background-position: 45% 0%;
+
 }
+/*#endregion projects*/
 /*#endregion MainAboutTextBox*/

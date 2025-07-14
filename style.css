@@ -17,21 +17,37 @@
 
 /*ffe9be*/
 
+.MainFront{
+    background-image: url(images/IMG_0823.jpg);
+    background-size: 110rem;
+    height: 40rem;
+
+    border-radius: 1.5rem;
+    overflow: hidden;
+
+}
+
+.FrontText{
+    margin-left: 10%;
+    height: 40rem;
+    align-content: center;
+}
+
 mark{
     background-color: #ff5200;
     color: #000;
 }
 
 body {
-    margin-left: 20%;
+    /* margin-left: 20%;
     margin-right: 20%;
-    margin-top: 10%;
+    margin-top: 10%; */
     background-color: #161616;
 }
 
 h1{
     margin-bottom: -2%;
-    color: #ffffff;
+    color: #161616;
     font-family: "Europa Grotesk";
     font-style: italic;
     font-weight: 200;
@@ -40,10 +56,11 @@ h1{
 
 h2 {
     margin-bottom: 3%;
-    color: white;
+    color: #161616;
     font-family: "Europa Grotesk";
     font-style: italic;
     font-weight: 200;
+    
 }
 
 h3{

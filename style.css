@@ -15,36 +15,19 @@
     font-weight: 300;
 }
 
+/*#region RegionName*/
+
+/*#endregion RegionName*/
+
 /*ffe9be*/
 
-.MainFront{
-    background-image: url(images/IMG_0823.jpg);
-    background-size: 110rem;
-    height: 40rem;
-
-    border-radius: 1.5rem;
-    overflow: hidden;
-
-}
-
-.FrontText{
-    margin-left: 10%;
-    height: 40rem;
-    align-content: center;
-}
-
-mark{
-    background-color: #ff5200;
-    color: #000;
-}
-
 body {
-    /* margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 10%; */
-    background-color: #161616;
+    background-color: #686868;
+    margin: 0%;
+    max-width: 100%;
 }
 
+/*#region basic text*/
 h1{
     margin-bottom: -2%;
     color: #161616;
@@ -92,51 +75,136 @@ p{
     font-weight: 200;
     margin-bottom: 3%;
 }
+/*#endregion basic text*/
 
-.button {
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
 
-    background-color: #1c1c1c;
-    border-radius: 1.5rem;
+.MainFront{
+    max-width: 100%;
+    background-image: url(images/IMG_0823.jpg);
+    background-size: 110rem;
+    height: 40rem;
+
     overflow: hidden;
 }
 
-.button1 {
-    background: url("images/plants-vs-zombies.png") no-repeat scroll 0 0 transparent;
-    background-size: 30rem;
-    background-position: 2%;
-    filter: brightness(40%);
-    background-color: #1c1c1ccc; 
-    color: rgb(255, 255, 255); 
+.FrontTextBox{
+    margin-top: -5%;
+    margin-left: 10%;
+    height: 40rem;
+    align-content: center;
 }
 
-.button1:hover {
+/*#region header*/
+.HeaderGrid{
+    margin-left: 2%;
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5%;
+}
+
+.HeaderButton{
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 5rem;
+    height: auto;
+    background-color: #161616;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.HeaderButton:hover {
     background-color: #2f2f2f;
     filter: brightness(85%);
     color: white;
 }
 
-.wrapper {
+h2.HeaderText{
+    margin: 10%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    font-family: "Europa Grotesk";
+    font-style: italic;
+    color: #ffffff;
+    font-size: small;
+    align-content: center;
+    letter-spacing: 0.1rem;
+}
+/*#endregion header*/
+
+/*#region MainAboutTextBox*/
+.MainAbout{
+    margin-top: -5%;
+    background-color: #161616;
+    overflow: hidden;
+    border-radius: 0rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.MainAboutTextBox{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 6.5%;
+}
+h1.MainBodyText{
+    margin-bottom: 0%;
+    color: #ffffff;
+    font-family: "Europa Grotesk";
+    font-style: italic;
+    font-weight: 200;
+    font-size: 4rem;
+}
+h2.MainBodyText{
+    margin-bottom: 3%;
+    color: #ffffff;
+    font-family: "Europa Grotesk";
+    font-style: italic;
+    font-weight: 200;
+    
+}
+
+.ProjectsContentBox{
+    margin-top: -3%;
+    margin-bottom: 25%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.ProjectGrid{
     margin-top: 3%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: center;
-    justify-content: center;
-    gap: 1rem;
 }
-.wrapper > div {
-    flex: 1 1 300px;
-    margin: auto;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
+
+.ProjectButton{
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 5rem;
+    height: auto;
+    background-color: #4c4c4c;
+    border-radius: 2rem;
+    overflow: hidden;
 }
+
+.ProjectButton:hover {
+    background-color: #2f2f2f;
+    filter: brightness(85%);
+    color: white;
+}
+
+.ProjectButton.PVZ{
+    width: 20rem;
+    height: 20rem;
+    background-image: url(images/plants-vs-zombies.png);
+    background-size: 40rem;
+    background-position: 45% 0%;
+}
+/*#endregion MainAboutTextBox*/

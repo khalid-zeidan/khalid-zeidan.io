@@ -141,6 +141,15 @@ h2.HeaderText{
     align-content: center;
     letter-spacing: 0.1rem;
 }
+
+.HeaderGradient{
+    margin-top: -30em;
+    scale: 100% 20%;
+    position: fixed;
+    -webkit-user-drag: none;
+    alignment-baseline:baseline;
+    opacity: 45%;
+}
 /*#endregion header*/
 
 /*#region MainAboutTextBox*/
@@ -232,6 +241,7 @@ h2.MainBodyText{
     width: 20rem;
     height: 20rem;
     position: relative;
+    -webkit-user-drag: none;
 }
 
 .ProjectLinkWrapper:hover {
@@ -248,10 +258,12 @@ h2.MainBodyText{
     transition: filter 0.4s ease; 
 
     filter: brightness(35%) blur(0.2rem); 
+    -webkit-user-drag: none;
 }
 
 .ProjectBackground.PVZ {
     background-image: url(images/plants-vs-zombies.png);
+    -webkit-user-drag: none;
 }
 
 .ProjectLinkWrapper:hover .ProjectBackground {

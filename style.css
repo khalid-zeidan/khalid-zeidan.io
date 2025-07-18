@@ -408,11 +408,22 @@ h2.MainBodyText.GridInfo{
 
 .ProjectBackground.PVZ {
     background-image: url(images/plants-vs-zombies.png);
-    -webkit-user-drag: none;
+}
+
+.ProjectBackground.MultiplayerFPS{
+    background-image: url(images/multiplayer\ fps.png);
+    background-size:120%; 
+    background-position: 0% -20%;
+}
+
+.ProjectBackground.HideAndSeek{
+    background-image: url(images/Hide\ and\ seek\ game.png);
+    background-size:120%; 
+    background-position: 0% -20%;
 }
 
 .ProjectLinkWrapper:hover .ProjectBackground {
-    filter: brightness(85%) blur(0rem); 
+    filter: brightness(100%) blur(0rem); 
 }
 
 /* This div holds the text content (h2 and p) */

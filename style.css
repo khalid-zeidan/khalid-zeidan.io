@@ -409,6 +409,11 @@ h2.MainBodyText.GridInfo{
     -webkit-user-drag: none;
 }
 
+.ProjectLinkWrapper:hover .ProjectBackground {
+    filter: brightness(100%) blur(0rem); 
+}
+
+/*#region backgrounds*/
 .ProjectBackground.PVZ {
     background-image: url(images/plants-vs-zombies.png);
 }
@@ -424,17 +429,14 @@ h2.MainBodyText.GridInfo{
     background-size:120%; 
     background-position: 0% -20%;
 }
-
-.ProjectLinkWrapper:hover .ProjectBackground {
-    filter: brightness(100%) blur(0rem); 
-}
+/*#endregion backgrounds*/
 
 /* This div holds the text content (h2 and p) */
 .ProjectContent {
     background-color: #161616;
     width: auto;
-    height: 65%;
-    margin-top: 50%;
+    height: 60%;
+    margin-top: auto;
 
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
@@ -463,7 +465,7 @@ h2.MainBodyText.GridInfo{
     font-size: 1.5rem; 
     padding-bottom: 0;
     padding-top: 0;
-    margin-top: -1em;
+    margin-top: 0;
 }
 .ProjectContent p.MainBodyText {
     font-size: 0.9rem; 

@@ -412,11 +412,19 @@ h2.MainBodyText.GridInfo{
 }
 
 .ProjectLinkWrapper:hover .ProjectBackground {
-    filter: brightness(85%) blur(0.1rem); 
+    filter: brightness(85%) blur(0rem); 
 }
 
 /* This div holds the text content (h2 and p) */
 .ProjectContent {
+    background-color: #161616;
+    width: auto;
+    height: 65%;
+    margin-top: 50%;
+
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+
     grid-area: stack; 
     z-index: 2; 
     display: flex; 
@@ -426,7 +434,6 @@ h2.MainBodyText.GridInfo{
     text-align: center;
     padding: 1rem; 
     box-sizing: border-box; 
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.7); 
 }
 
 /* Styling for text within the project content */
@@ -436,10 +443,21 @@ h2.MainBodyText.GridInfo{
     padding: 0.5rem 0; 
 }
 .ProjectContent h2.MainBodyText {
+    font-family: "Europa Grotesk";
+    font-style: italic;
+    font-weight: 200;
     font-size: 1.5rem; 
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: -1em;
 }
 .ProjectContent p.MainBodyText {
     font-size: 0.9rem; 
+    font-family: Monument Grotesk Mono, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    line-height: 1.2rem;
+    text-justify: inter-word;
 }
 /*#endregion projects*/
 

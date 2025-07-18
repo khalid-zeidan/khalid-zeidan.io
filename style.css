@@ -262,12 +262,13 @@ h2.HeaderText{
     align-content: center;
 }
 
-.HeaderGradient{
-    margin-top: -30em;
+.HeaderGradient {
+    margin-top: -25%;
     scale: 100% 20%;
+    width: 100%;
     position: fixed;
     -webkit-user-drag: none;
-    alignment-baseline:baseline;
+    alignment-baseline: baseline;
     opacity: 45%;
 }
 /*#endregion header*/
@@ -401,6 +402,8 @@ h2.MainBodyText.GridInfo{
     background-position: center; 
     background-repeat: no-repeat;
     transition: filter 0.4s ease; 
+
+    transform: scale(1.03);
 
     filter: brightness(35%) blur(0.2rem); 
     -webkit-user-drag: none;

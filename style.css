@@ -197,23 +197,27 @@ body {
 }
 
 .FrontTextBox{
-    margin-top: -50%;
+    margin-top: 22%;
     margin-left: 10%;
     margin-bottom: 30%;
     height: auto;
+    width: 100%;
+    max-width: 100%;
 }
 
 .FrontBackGround{
     height: auto;
+    width: 100%;
     overflow: hidden;
+    position: fixed;
+    z-index: -100;
 }
 
 img.FrontBackGround{
     width: 100%;
-    height: 100%;
-
+    height: auto;
+    background-size: cover;
     z-index: -100;
-    position: relative;
     overflow: hidden;
 }
 /*#endregion Front*/
@@ -295,7 +299,7 @@ h2.HeaderText{
 /*#region MainAboutTextBox*/
 
 .MainBody{
-    margin-top: -5%;
+    margin-top: 50%;
     background-color: #222;
     overflow: hidden;
     border-radius: 2rem;
@@ -320,6 +324,7 @@ h2.MainBodyText{
     margin-bottom: 3%;
     color: #ffffff;
     font-family: Monument Grotesk, sans-serif;
+    font-size: 2vw;
     font-weight: normal;
     font-style: normal;
     line-height: 2rem;
@@ -340,6 +345,7 @@ h2.MainBodyText{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .ExperienceGrid.Experience{
@@ -354,6 +360,7 @@ h2.MainBodyText.Experience{
     font-family: Monument Grotesk, sans-serif;
     font-weight: normal;
     font-style: normal;
+    font-size: 2vw;
     line-height: 2rem;
     text-align: justify;
     text-justify: inter-word;

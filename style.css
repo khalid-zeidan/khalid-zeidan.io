@@ -358,6 +358,48 @@ h2.MainBodyText.GridInfo{
     text-align: justify;
     text-justify: inter-word;
 }
+
+/*#region Languages*/
+.LanguagesGrid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 1em;
+}
+
+.LanguageCont{
+    background-color: #4e4e4e;
+    border-radius: 2rem;
+    overflow: hidden;
+
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    gap: 0em;
+
+    width: auto;
+    height: auto;
+}
+
+.LanguageText{
+    font-family: Monument Grotesk, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+    font-size: small;
+
+    margin: 0;
+
+    padding: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 100%;
+    line-height: 2.5rem;
+    text-align: center;
+}
+/*#endregion Languages*/
+
+
 /*#endregion experience*/
 
 /*#region projects*/

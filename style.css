@@ -177,6 +177,18 @@ body {
     max-width: 100%;
 }
 
+.Noise{
+    position: fixed;
+    mix-blend-mode: color-dodge;
+    opacity: 75%;
+    transform: scale(1);
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    background-size: cover;
+}
+
+
 /*#region Front*/
 .MainFront{
     max-width: 100%;
@@ -398,7 +410,6 @@ h2.MainBodyText.GridInfo{
     text-align: center;
 }
 /*#endregion Languages*/
-
 
 /*#endregion experience*/
 

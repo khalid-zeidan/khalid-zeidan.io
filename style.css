@@ -302,6 +302,7 @@ h2.HeaderText{
     width: 100%;
     position: fixed;
     -webkit-user-drag: none;
+    pointer-events: none;
     alignment-baseline: baseline;
     opacity: 45%;
 }

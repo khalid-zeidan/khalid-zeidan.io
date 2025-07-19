@@ -177,15 +177,26 @@ body {
     max-width: 100%;
 }
 
+@keyframes shake {
+  0% { transform: translate(200px, 200px) scale(1.75);}
+  50% { transform: translate(-100px, 200px) scale(1.75);}
+  100% { transform: translate(100px, -200px) scale(1.75);}
+}
+
 .Noise{
     position: fixed;
     mix-blend-mode: color-dodge;
-    opacity: 75%;
-    transform: scale(1);
+    opacity: 65%;
     height: 100vh;
     width: 100%;
     margin: auto;
     background-size: cover;
+
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(3);
+    pointer-events: none;
+    z-index: 1000;
 }
 
 

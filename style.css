@@ -327,7 +327,7 @@ h2.MainBodyText{
     font-size: 2vw;
     font-weight: normal;
     font-style: normal;
-    line-height: 2rem;
+    line-height: 2.75vw;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -354,8 +354,8 @@ h2.MainBodyText{
 
 h2.MainBodyText.Experience{
     margin: 0rem;
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
+    margin-top: 0.75vw;
+    margin-bottom: 0.75vw;
     color: #ffffff;
     font-family: Monument Grotesk, sans-serif;
     font-weight: normal;
@@ -561,9 +561,15 @@ h2.MainBodyText.GridInfo{
 p.Footer{
     margin-top: 4em;
     margin-left: 1em;
+    height: auto;
     font-family: Monument Grotesk Mono, sans-serif;
     font-weight: normal;
     font-style: normal;
-    color: #333;
+    color: #222222;
+}
+
+.footerIMG{
+    width: 45%;
+    margin-left: 1em;
 }
 /*#endregion Footer*/

@@ -508,6 +508,12 @@ h2.MainBodyText.GridInfo{
     background-size:120%; 
     background-position: 0% -20%;
 }
+
+.ProjectBackground.CubieMarathon{
+    background-image: url(images/CubieMarathon.png);
+    background-size:120%; 
+    background-position: 50% -50%;
+}
 /*#endregion backgrounds*/
 
 /* This div holds the text content (h2 and p) */

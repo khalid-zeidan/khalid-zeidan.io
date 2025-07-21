@@ -231,6 +231,24 @@ img.FrontBackGround{
     z-index: -100;
     overflow: hidden;
 }
+
+h1.Front{
+    margin-bottom: -2.5vw;
+    color: #161616;
+    font-family: "Europa Grotesk";
+    font-style: italic;
+    font-weight: 200;
+    font-size: 5.5vw;
+}
+
+h2.Front{
+    margin-bottom: 3%;
+    color: #161616;
+    font-family: "Europa Grotesk";
+    font-style: italic;
+    font-weight: 200;
+    font-size: 2vw;
+}
 /*#endregion Front*/
 
 /*#region header*/

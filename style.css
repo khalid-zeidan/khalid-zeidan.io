@@ -537,7 +537,7 @@ h2.MainBodyText.GridInfo{
 /* This div holds the text content (h2 and p) */
 .ProjectContent {
     background-color: #161616;
-    width: auto;
+    width: 100%;
     height: 60%;
     margin-top: auto;
 
@@ -578,6 +578,35 @@ h2.MainBodyText.GridInfo{
     line-height: 1.2rem;
     text-justify: inter-word;
 }
+
+@media (max-width: 1080px) {
+    .ProjectLinkWrapper{
+        width: 100%;
+        height: 75vw;
+
+        border-radius: 7vw;
+    }
+
+    .ProjectContent{
+        padding: 4vw;
+
+        border-radius: 7vw;
+    }
+
+    .ProjectContent h2.MainBodyText{
+
+        font-size: 6vw;
+        margin-bottom: 3vw;
+
+        text-align: center;
+    }
+
+    .ProjectContent p.MainBodyText{
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+}
+
 /*#endregion projects*/
 
 /*#endregion MainAboutTextBox*/

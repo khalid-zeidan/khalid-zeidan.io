@@ -1,640 +1,326 @@
-/*#region fonts*/
-@font-face {
-    font-family: "Europa Grotesk";
-/*    src: url(fonts/Europa-Grotesk-Bold.otf) format("opentype");
-    src: url(fonts/Europa-Grotesk-Medium.ttf) format("truetype"), */
-    src: url(fonts/Europa-Grotesk-Medium-Italic.otf) format("opentype");
-    font-style: italic;
-    font-weight: 200;
+/* --- Root Variables --- */
+:root {
+    --font-primary: "Europa Grotesk", sans-serif;
+    --font-secondary: "Monument Grotesk", sans-serif;
+    --font-mono: "Monument Grotesk Mono", monospace;
+
+    --color-text-dark: #161616;
+    --color-text-light: #ffffff;
+    --color-bg-light-gray: #767676;
+    --color-bg-dark-gray: #222222;
+    --color-bg-button: #4e4e4e;
+    --color-bg-button-hover: #2f2f2f;
+    --color-bg-footer: #d77550;
+    --color-bg-nav: #313131;
 }
 
-@font-face {
-    font-family: "Europa Grotesk";
-    src: url(fonts/Europa-Grotesk-Bold.otf) format("opentype");
-
-    font-style: oblique;
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: 'Monument Grotesk';
-    src: url('fonts/MonumentGrotesk/MonumentGrotesk-Bold.eot');
-    src: local('Monument Grotesk Bold'), local('MonumentGrotesk-Bold'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Bold.woff2') format('woff2'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Bold.woff') format('woff'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Monument Grotesk';
-    src: url('fonts/MonumentGrotesk/MonumentGrotesk-Italic.eot');
-    src: local('Monument Grotesk Italic'), local('MonumentGrotesk-Italic'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/MonumentGrotesk/fonts/MonumentGrotesk/MonumentGrotesk-Italic.woff2') format('woff2'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Italic.woff') format('woff'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Monument Grotesk';
-    src: url('fonts/MonumentGrotesk/MonumentGrotesk-Medium.eot');
-    src: local('Monument Grotesk Medium'), local('MonumentGrotesk-Medium'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Medium.eot?#iefix') format('embedded-opentype'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Medium.woff2') format('woff2'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Medium.woff') format('woff'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Monument Grotesk Semi-Mono';
-    src: url('fonts/MonumentGrotesk/MonumentGrotesk-Semi-Mono.eot');
-    src: local('Monument Grotesk Semi-Mono'), local('MonumentGrotesk-Semi-Mono'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Semi-Mono.eot?#iefix') format('embedded-opentype'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Semi-Mono.woff2') format('woff2'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Semi-Mono.woff') format('woff'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Semi-Mono.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Monument Grotesk';
-    src: url('fonts/MonumentGrotesk/MonumentGrotesk-Regular.eot');
-    src: local('Monument Grotesk Regular'), local('MonumentGrotesk-Regular'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Regular.woff2') format('woff2'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Regular.woff') format('woff'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Monument Grotesk Mono';
-    src: url('fonts/MonumentGrotesk/MonumentGrotesk-Mono.eot');
-    src: local('Monument Grotesk Mono'), local('MonumentGrotesk-Mono'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Mono.eot?#iefix') format('embedded-opentype'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Mono.woff2') format('woff2'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Mono.woff') format('woff'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-Mono.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Monument Grotesk';
-    src: url('fonts/MonumentGrotesk/MonumentGrotesk-BoldItalic.eot');
-    src: local('Monument Grotesk Bold Italic'), local('MonumentGrotesk-BoldItalic'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-BoldItalic.woff2') format('woff2'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-BoldItalic.woff') format('woff'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Monument Grotesk';
-    src: url('fonts/MonumentGrotesk/MonumentGrotesk-MediumItalic.eot');
-    src: local('Monument Grotesk Medium Italic'), local('MonumentGrotesk-MediumItalic'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-MediumItalic.woff2') format('woff2'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-MediumItalic.woff') format('woff'),
-        url('fonts/MonumentGrotesk/MonumentGrotesk-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-}
-/*#endregion fonts*/
-
-/*#region RegionName*/
-
-/*#endregion RegionName*/
-
-/*#region basic text*/
-h1{
-    margin-bottom: -2%;
-    color: #161616;
-    font-family: "Europa Grotesk";
-    font-style: italic;
-    font-weight: 200;
-    font-size: 5rem;
-}
-
-h2 {
-    margin-bottom: 3%;
-    color: #161616;
-    font-family: "Europa Grotesk";
-    font-style: italic;
-    font-weight: 200;
-    
-}
-
-h3{
-    color: white;
-    font-family: "Europa Grotesk";
-    font-style: italic;
-    font-weight: 200;
-
-    text-align: center;
-    vertical-align: middle;
-    line-height: auto; 
-    width: 22rem;
-}
-
-h4{
-    margin-top: 2%;
-    margin-bottom: -0.75%;
-    color: #ffffff;
-    font-family: "Europa Grotesk";
-    font-style: italic;
-    font-weight: 200;
-    font-size: 2rem;
-}
-
-p{
-    color: white;
-    font-family: "Europa Grotesk";
-    font-style: italic;
-    font-weight: 200;
-    margin-bottom: 3%;
-}
-
-ul{
-    padding-left: 0%;
-}
-/*#endregion basic text*/
-
+/* --- Base & Typography --- */
 body {
-    background-color: #767676;
-    margin: 0%;
+    background-color: var(--color-bg-light-gray);
+    margin: 0;
     max-width: 100%;
+    font-family: var(--font-primary);
+    font-style: italic;
+    font-weight: 200;
+    color: var(--color-text-dark);
 }
 
-@keyframes shake {
-  0% { transform: translate(200px, 200px) scale(1.75);}
-  50% { transform: translate(-100px, 200px) scale(1.75);}
-  100% { transform: translate(100px, -200px) scale(1.75);}
+h1, h2, h3, h4, p {
+    margin: 0;
+    font-style: italic;
+    font-weight: 200;
 }
 
-.Noise{
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+button {
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.4s;
+    cursor: pointer;
+    background-color: var(--color-bg-button);
+    border-radius: 2rem;
+    overflow: hidden;
+    padding: 0;
+}
+
+button:hover {
+    background-color: var(--color-bg-button-hover);
+}
+
+/* --- Noise Overlay --- */
+.Noise {
     position: fixed;
+    inset: 0;
     mix-blend-mode: color-dodge;
-    opacity: 65%;
+    opacity: 0.65;
     height: 100vh;
     width: 100%;
-    margin: auto;
-    background-size: cover;
-
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: steps(3);
+    animation: shake 0.5s steps(3) infinite;
     pointer-events: none;
     z-index: 1000;
 }
 
+@keyframes shake {
+    0% { transform: translate(200px, 200px) scale(1.75); }
+    50% { transform: translate(-100px, 200px) scale(1.75); }
+    100% { transform: translate(100px, -200px) scale(1.75); }
+}
 
-/*#region Front*/
-.MainFront{
-    max-width: 100%;
-    height: auto;
+/* --- Hero Section --- */
+.MainFront {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
     overflow: hidden;
 }
 
-.FrontTextBox{
-    margin-top: 22%;
+.FrontTextBox {
+    position: fixed; /* Makes the element fixed relative to the viewport */
+    top: 50%; /* Position it 50% down from the top of the viewport */
+    transform: translateY(-50%); /* Shift it up by half its own height to truly center it vertically */
+    
+    /* Original styles */
     margin-left: 10%;
-    margin-bottom: 30%;
-    height: auto;
-    width: 100%;
-    max-width: 100%;
+    width: 80%;
+    
+    /* Ensure it stays above the gradient/background if they have lower z-index */
+    z-index: -10; 
 }
 
-.FrontBackGround{
-    height: auto;
-    width: 100%;
-    overflow: hidden;
+.FrontBackGround {
     position: fixed;
-    z-index: -100;
-}
-
-img.FrontBackGround{
+    inset: 0;
     width: 100%;
-    height: auto;
-    background-size: cover;
+    height: 130vh;
+    object-fit: cover;
     z-index: -100;
-    overflow: hidden;
 }
 
-h1.Front{
-    margin-bottom: -2.5vw;
-    color: #161616;
-    font-family: "Europa Grotesk";
+.FrontTextBox .Front {
     font-style: italic;
     font-weight: 200;
     font-size: 5.5vw;
+    margin-bottom: -1vw;
 }
 
-h2.Front{
-    margin-bottom: 3%;
-    color: #161616;
-    font-family: "Europa Grotesk";
-    font-style: italic;
-    font-weight: 200;
+.FrontTextBox h2.Front {
     font-size: 2vw;
 }
-/*#endregion Front*/
 
-/*#region header*/
-.HeaderGrid{
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-top: 2em;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-
+/* --- Header --- */
+.HeaderGrid {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-
+    top: 2em;
+    left: 2em;
+    right: 2em;
+    display: flex;
+    gap: 1em;
     z-index: 999;
 }
 
-.HeaderButton{
-    border: none;
-    text-decoration: none;
-    text-align: center;
-    vertical-align: auto;
-    display: inline-block;
-    transition-duration: 0.4s;
-    cursor: pointer;
-
-    width: auto;
-    height: auto;
-
-    background-color: #4e4e4e;
-    border-radius: 2rem;
-    overflow: hidden;
-    padding: 0;
-}
-
-.Header.Email{
+.Header.Email {
     margin-left: auto;
-    margin-right: 0;
 }
 
-.HeaderButton:hover {
-    background-color: #2f2f2f;
-    filter: brightness(85%);
-    color: white;
-}
-
-h2.HeaderText{
-    font-family: Monument Grotesk, sans-serif;
+.HeaderText {
+    font-family: var(--font-secondary);
     font-weight: bold;
     font-style: normal;
-    color: #ffffff;
+    color: var(--color-text-light);
     font-size: small;
-
     margin: 0;
-
-    padding: 0;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    max-width: 100%;
+    padding: 0 1.5rem;
     line-height: 2.5rem;
-    text-align: center;
 }
 
 .HeaderGradient {
-    margin-top: -25%;
-    scale: 100% 20%;
-    width: 100%;
     position: fixed;
-    -webkit-user-drag: none;
+    top: -50%;
+    width: 100%;
+    opacity: 0.45;
     pointer-events: none;
-    alignment-baseline: baseline;
-    opacity: 45%;
+    transform: scale(1, 0.2);
+    -webkit-user-drag: none;
 }
-/*#endregion header*/
 
-/*#region MainAboutTextBox*/
+/* --- Navigation --- */
+.NavBarContainer {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
 
-.MainBody{
-    margin-top: 50%;
-    background-color: #222;
-    overflow: hidden;
+.NavGrid {
+    display: flex;
+    gap: 1em;
+    background-color: var(--color-bg-nav);
+    padding: 1rem;
+    border-radius: 5rem;
+}
+
+.NavText {
+    font-family: var(--font-secondary);
+    font-weight: bold;
+    font-style: normal;
+    color: var(--color-text-light);
+    font-size: small;
+    margin: 0;
+    padding: 0 1.5rem;
+    line-height: 2.5rem;
+}
+
+/* --- Main Content Body --- */
+.MainBody {
+    background-color: var(--color-bg-dark-gray);
+    color: var(--color-text-light);
     border-radius: 2rem;
+    padding: 10% 10% 6.5%;
+    position: relative;
+    z-index: 1;
 }
 
-/*#region About*/
-.MainAboutTextBox{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;
+.MainBodyText {
+    color: var(--color-text-light);
+}
+
+/* About Section */
+.MainAboutTextBox {
     margin-bottom: 6.5%;
 }
-h1.MainBodyText{
-    margin-bottom: 0%;
-    color: #ffffff;
-    font-family: "Europa Grotesk";
-    font-style: italic;
-    font-weight: 200;
+
+.MainAboutTextBox h1 {
     font-size: 4rem;
+    margin-bottom: 1rem;
 }
-h2.MainBodyText{
-    margin-bottom: 3%;
-    color: #ffffff;
-    font-family: Monument Grotesk, sans-serif;
+
+.MainAboutTextBox h2 {
+    font-family: var(--font-secondary);
     font-size: 2vw;
     font-weight: normal;
     font-style: normal;
     line-height: 2.75vw;
     text-align: justify;
-    text-justify: inter-word;
 }
-/*#endregion About*/
 
-/*#region experience*/
-.ExperienceContainer{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
+/* Experience Section */
+.ExperienceContainer {
     margin-bottom: 6.5%;
 }
 
-.ExperienceGrid{
+.ExperienceContainer h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.ExperienceGrid {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     gap: 1rem;
+    align-items: center;
 }
 
-.ExperienceGrid.Experience{
-    text-align: right;
+.ExperienceContainer hr {
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 1.5rem 0;
 }
 
-h2.MainBodyText.Experience{
-    margin: 0rem;
-    margin-top: 0.75vw;
-    margin-bottom: 0.75vw;
-    color: #ffffff;
-    font-family: Monument Grotesk, sans-serif;
+.ExperienceGrid h2.Experience {
+    font-family: var(--font-secondary);
     font-weight: normal;
     font-style: normal;
     font-size: 2vw;
     line-height: 2rem;
-    text-align: justify;
-    text-justify: inter-word;
 }
 
-h2.MainBodyText.GridInfo{
-    margin-bottom: -0.5rem;
-    color: #ffffff;
-    font-family: Monument Grotesk Mono, sans-serif;
+.ExperienceGrid .GridInfo {
+    font-family: var(--font-mono);
     font-weight: lighter;
     font-style: normal;
     font-size: 1rem;
     line-height: 2rem;
-    text-align: justify;
-    text-justify: inter-word;
 }
 
-/*#region Languages*/
-.LanguagesGrid{
+/* Languages Section */
+.LanguagesGrid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
     gap: 1em;
+    margin-top: 3rem;
 }
 
-.LanguageCont{
-    background-color: #4e4e4e;
+.LanguageCont {
+    background-color: var(--color-bg-button);
     border-radius: 2rem;
-    overflow: hidden;
-
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    gap: 0em;
-
-    width: auto;
-    height: auto;
 }
 
-.LanguageText{
-    font-family: Monument Grotesk, sans-serif;
+.LanguageText {
+    font-family: var(--font-secondary);
     font-weight: bold;
     font-style: normal;
-    color: #ffffff;
+    color: var(--color-text-light);
     font-size: small;
-
     margin: 0;
-
-    padding: 0;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    max-width: 100%;
+    padding: 0 1.5rem;
     line-height: 2.5rem;
-    text-align: center;
-}
-/*#endregion Languages*/
-
-/*#endregion experience*/
-
-/*#region projects*/
-.ProjectsContentBox{
-    margin-top: -3%;
-    margin-left: 10%;
-    margin-right: 10%;
-
-    padding-bottom: 25%;
 }
 
-.ProjectGrid{
-    margin-top: 3%;
-    display: flex;
-    flex-wrap: wrap;
-
-    justify-content: space-between;
-    align-items: stretch;
-    
-    row-gap: 2rem;
-    column-gap: 2rem;
-}
-
-.ProjectLinkWrapper {
-    display: grid; 
-    grid-template-areas: "stack";
-    place-items: center;
-    text-decoration: none;
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 2rem;
-    transition: transform 0.3s ease;
-
-    width: 20rem;
-    height: 20rem;
+/* --- Footer --- */
+.Footer {
     position: relative;
-    -webkit-user-drag: none;
-}
-
-.ProjectLinkWrapper:hover {
-    transform: translateY(-5px);
-}
-
-.ProjectBackground {
-    grid-area: stack; 
-    width: 100%;
-    height: 100%;
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    transition: filter 0.4s ease; 
-
-    transform: scale(1.03);
-
-    filter: brightness(35%) blur(0.2rem); 
-    -webkit-user-drag: none;
-}
-
-.ProjectLinkWrapper:hover .ProjectBackground {
-    filter: brightness(100%) blur(0rem); 
-}
-
-/*#region backgrounds*/
-.ProjectBackground.PVZ {
-    background-image: url(images/plants-vs-zombies.png);
-}
-
-.ProjectBackground.MultiplayerFPS{
-    background-image: url(images/multiplayer\ fps.png);
-    background-size:120%; 
-    background-position: 0% -20%;
-}
-
-.ProjectBackground.HideAndSeek{
-    background-image: url(images/Hide\ and\ seek\ game.png);
-    background-size:120%; 
-    background-position: 0% -20%;
-}
-
-.ProjectBackground.CubieMarathon{
-    background-image: url(images/CubieMarathon.png);
-    background-size:120%; 
-    background-position: 50% -50%;
-}
-/*#endregion backgrounds*/
-
-/* This div holds the text content (h2 and p) */
-.ProjectContent {
-    background-color: #161616;
-    width: 100%;
-    height: 60%;
-    margin-top: auto;
-
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-
-    grid-area: stack; 
-    z-index: 2; 
-    display: flex; 
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    text-align: center;
-    padding: 1rem; 
-    box-sizing: border-box; 
-}
-
-/* Styling for text within the project content */
-.ProjectContent .MainBodyText {
-    color: white; 
-    margin: 0; 
-    padding: 0.5rem 0; 
-}
-.ProjectContent h2.MainBodyText {
-    font-family: "Europa Grotesk";
-    font-style: italic;
-    font-weight: 200;
-    font-size: 1.5rem; 
-    padding-bottom: 0;
-    padding-top: 0;
-    margin-top: 0;
-}
-.ProjectContent p.MainBodyText {
-    font-size: 0.9rem; 
-    font-family: Monument Grotesk Mono, sans-serif;
-    font-weight: lighter;
-    font-style: normal;
-    line-height: 1.2rem;
-    text-justify: inter-word;
-}
-
-@media (max-width: 1080px) {
-    .ProjectLinkWrapper{
-        width: 100%;
-        height: 75vw;
-
-        border-radius: 7vw;
-    }
-
-    .ProjectContent{
-        padding: 4vw;
-
-        border-radius: 7vw;
-    }
-
-    .ProjectContent h2.MainBodyText{
-
-        font-size: 6vw;
-        margin-bottom: 3vw;
-
-        text-align: center;
-    }
-
-    .ProjectContent p.MainBodyText{
-        font-size: 4vw;
-        line-height: 6vw;
-    }
-}
-
-/*#endregion projects*/
-
-/*#endregion MainAboutTextBox*/
-
-/*#region Footer*/
-.Footer{
-    position: relative;
-    background-color: #d77550;
+    background-color: var(--color-bg-footer);
     margin-top: -2em;
-    max-width: 100%;
     width: 100%;
     height: 35em;
     z-index: -10;
     overflow: hidden;
 }
 
-p.Footer{
+p.Footer {
     margin-top: 4em;
     margin-left: 1em;
     height: auto;
-    font-family: Monument Grotesk Mono, sans-serif;
+    font-family: var(--font-mono);
     font-weight: normal;
     font-style: normal;
-    color: #222222;
+    color: var(--color-bg-dark-gray);
 }
 
-.footerIMG{
+.footerIMG {
     width: 45%;
+    margin-top: 1em;
     margin-left: 1em;
 }
-/*#endregion Footer*/
+
+/* --- Media Queries --- */
+@media (max-width: 1080px) {
+    .ProjectLinkWrapper {
+        width: 100%;
+        height: 75vw;
+        border-radius: 7vw;
+    }
+
+    .ProjectContent {
+        padding: 4vw;
+        border-radius: 7vw;
+    }
+
+    .ProjectContent h2 {
+        font-size: 6vw;
+        margin-bottom: 3vw;
+    }
+
+    .ProjectContent p {
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+}

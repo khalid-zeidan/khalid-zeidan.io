@@ -2,8 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css">
     <title>Khalid Zeidan</title>
+    <!-- Link to the new fonts CSS file first -->
+    <link rel="stylesheet" href="fonts.css">
+    <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
 </head>
 
@@ -12,14 +15,11 @@
 
 <div class="MainFront">
     <img src="images/gradient.png" alt="gradient" draggable="false" class="HeaderGradient">
+    <img src="images/IMG_0823.jpg" alt="image of khalid zeidan" class="FrontBackGround">
 
-    <div class="FrontBackGround">
-        <img src="images/IMG_0823.jpg" alt="image of khalid zeidan" class="FrontBackGround">
-
-        <div class="FrontTextBox">
-            <h1 class="Front">This is Khalid Zeidan.</h1>
-            <h2 class="Front">unbounded creativity.</h2>
-        </div>
+    <div class="FrontTextBox">
+        <h1 class="Front">This is Khalid Zeidan.</h1>
+        <h2 class="Front">unbounded creativity.</h2>
     </div>
     
     <header>
@@ -30,8 +30,16 @@
     </div>
     </header>
 
-
+    <nav class="NavBarContainer">
+        <div class="NavGrid">
+            <button class="NavButton"><h2 class="NavText">programming</h2></button>
+            <button class="NavButton"><h2 class="NavText">graphics design</h2></button>
+            <button class="NavButton"><h2 class="NavText">video editing</h2></button>
+        </div>
+    </nav>
 </div>
+
+
 
 <div class="MainBody">
     <div class="MainAboutTextBox">
@@ -74,76 +82,11 @@
             <div class="LanguageCont"><h2 class="LanguageText">JavaScript</h2></div>
         </div>
     </div>
-
-    <div class="ProjectsContentBox">
-        <h1 class="MainBodyText">Projects</h1>
-        <div class="ProjectGrid">
-        
-        <!-- plants vs zombies -->
-        <a href="https://github.com/ahmedmhfathy/plants-vs-zombies" target="_blank" class="ProjectLinkWrapper">
-            <div class="ProjectBackground PVZ"></div>
-
-            <div class="ProjectContent">
-                <h2 class="MainBodyText">Plants VS Zombies</h2>
-                <p class="MainBodyText">This is a recreation featuring 5 levels, 11 plants and 10 zombies. made with C++ and SFML.</p>
-            </div>
-        </a>
-
-        <!-- MultiplayerFPS -->
-        <a onclick="return false" href="" class="ProjectLinkWrapper">
-            <div class="ProjectBackground MultiplayerFPS"></div>
-
-            <div class="ProjectContent">
-                <h2 class="MainBodyText">Multiplayer FPS</h2>
-                <p class="MainBodyText">20 player FPS game made with Photon servers and the Unity game engine.</p>
-            </div>
-        </a>
-
-        <!-- Multiplayer hide and seek -->
-        <a onclick="return false" href="" class="ProjectLinkWrapper">
-            <div class="ProjectBackground HideAndSeek"></div>
-
-            <div class="ProjectContent">
-                <h2 class="MainBodyText">Multiplayer Hide and Seek</h2>
-                <p class="MainBodyText">20 player hide and seek game made with Photon servers and the Unity game engine.</p>
-            </div>
-        </a>
-
-        <!-- cubiemarathon -->
-        <a onclick="return false" href="" class="ProjectLinkWrapper">
-            <div class="ProjectBackground CubieMarathon"></div>
-
-            <div class="ProjectContent">
-                <h2 class="MainBodyText">CubieMarathon</h2>
-                <p class="MainBodyText">Infinite runner game made with the Unity game engine.</p>
-            </div>
-        </a>
-
-        <a href="https://github.com/ahmedmhfathy/plants-vs-zombies" target="_blank" class="ProjectLinkWrapper">
-            <div class="ProjectBackground PVZ"></div>
-
-            <div class="ProjectContent">
-                <h2 class="MainBodyText">Plants VS Zombies</h2>
-                <p class="MainBodyText">This is a recreation featuring 5 levels, 11 plants and 10 zombies. made with c++ and SFML.</p>
-            </div>
-        </a>
-
-        <a href="https://github.com/ahmedmhfathy/plants-vs-zombies" target="_blank" class="ProjectLinkWrapper">
-            <div class="ProjectBackground PVZ"></div>
-
-            <div class="ProjectContent">
-                <h2 class="MainBodyText">Plants VS Zombies</h2>
-                <p class="MainBodyText">This is a recreation featuring 5 levels, 11 plants and 10 zombies. made with c++ and SFML.</p>
-            </div>
-        </a>
-    </div>
-
-    </div>
 </div>
 
 <div class="Footer">
-<p class="Footer">&copy; 2025 Khalid Zeidan - All rights reserved</p>
-<img src="images/khalid-zeidan.png" alt="khalid zeidan text" class="footerIMG">
+    <p class="Footer">&copy; 2025 Khalid Zeidan - All rights reserved</p>
+    <img src="images/khalid-zeidan.png" alt="khalid zeidan text" class="footerIMG">
 </div>
 
 </body>

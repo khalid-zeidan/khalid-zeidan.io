@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
   This file contains all the @font-face declarations for the website.
   It should be loaded before the main style.css file.
@@ -112,3 +113,117 @@
   font-weight: 600;
   font-style: normal;
 }
+=======
+@font-face {
+    font-family: "Europa Grotesk";
+/*    src: url(fonts/Europa-Grotesk-Bold.otf) format("opentype");
+    src: url(fonts/Europa-Grotesk-Medium.ttf) format("truetype"), */
+    src: url(fonts/Europa-Grotesk-Medium-Italic.otf) format("opentype");
+    font-style: italic;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Europa Grotesk";
+    src: url(fonts/Europa-Grotesk-Bold.otf) format("opentype");
+
+    font-style: oblique;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('fonts/MonumentGrotesk/MonumentGrotesk-Bold.eot');
+    src: local('Monument Grotesk Bold'), local('MonumentGrotesk-Bold'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Bold.woff2') format('woff2'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Bold.woff') format('woff'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('fonts/MonumentGrotesk/MonumentGrotesk-Italic.eot');
+    src: local('Monument Grotesk Italic'), local('MonumentGrotesk-Italic'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MonumentGrotesk/fonts/MonumentGrotesk/MonumentGrotesk-Italic.woff2') format('woff2'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Italic.woff') format('woff'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('fonts/MonumentGrotesk/MonumentGrotesk-Medium.eot');
+    src: local('Monument Grotesk Medium'), local('MonumentGrotesk-Medium'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Medium.woff2') format('woff2'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Medium.woff') format('woff'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk Semi-Mono';
+    src: url('fonts/MonumentGrotesk/MonumentGrotesk-Semi-Mono.eot');
+    src: local('Monument Grotesk Semi-Mono'), local('MonumentGrotesk-Semi-Mono'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Semi-Mono.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Semi-Mono.woff2') format('woff2'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Semi-Mono.woff') format('woff'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Semi-Mono.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('fonts/MonumentGrotesk/MonumentGrotesk-Regular.eot');
+    src: local('Monument Grotesk Regular'), local('MonumentGrotesk-Regular'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Regular.woff2') format('woff2'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Regular.woff') format('woff'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk Mono';
+    src: url('fonts/MonumentGrotesk/MonumentGrotesk-Mono.eot');
+    src: local('Monument Grotesk Mono'), local('MonumentGrotesk-Mono'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Mono.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Mono.woff2') format('woff2'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Mono.woff') format('woff'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-Mono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('fonts/MonumentGrotesk/MonumentGrotesk-BoldItalic.eot');
+    src: local('Monument Grotesk Bold Italic'), local('MonumentGrotesk-BoldItalic'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-BoldItalic.woff2') format('woff2'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-BoldItalic.woff') format('woff'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Monument Grotesk';
+    src: url('fonts/MonumentGrotesk/MonumentGrotesk-MediumItalic.eot');
+    src: local('Monument Grotesk Medium Italic'), local('MonumentGrotesk-MediumItalic'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-MediumItalic.woff2') format('woff2'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-MediumItalic.woff') format('woff'),
+        url('fonts/MonumentGrotesk/MonumentGrotesk-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+>>>>>>> 1bbfe44646b53989601af429395edfb157d8f1a1

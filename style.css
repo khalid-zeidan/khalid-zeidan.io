@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* --- Root Variables --- */
 :root {
     --font-primary: "Europa Grotesk", sans-serif;
@@ -15,6 +16,58 @@
 }
 
 /* --- Base & Typography --- */
+=======
+@import url('fonts.css');
+
+/*#region RegionName*/
+
+/*#endregion RegionName*/
+
+/*#region basic text*/
+h1,h2,h3,h4,p{
+    font-family: "Europa Grotesk";
+    font-style: italic;
+    font-weight: 200;
+
+    color: white;
+}
+
+h1{
+    margin-bottom: -2%;
+    color: #161616;
+
+    font-size: 5rem;
+}
+
+h2 {
+    margin-bottom: 3%;
+    color: #161616;
+}
+
+h3{
+    text-align: center;
+    vertical-align: middle;
+    line-height: auto; 
+    width: 22rem;
+}
+
+h4{
+    margin-top: 2%;
+    margin-bottom: -0.75%;
+
+    font-size: 2rem;
+}
+
+p{
+    margin-bottom: 3%;
+}
+
+ul{
+    padding-left: 0%;
+}
+/*#endregion basic text*/
+
+>>>>>>> 1bbfe44646b53989601af429395edfb157d8f1a1
 body {
     background-color: var(--color-bg-light-gray);
     margin: 0;

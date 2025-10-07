@@ -1,0 +1,7 @@
+h1.Front, h2.Front{
+    color: var(--color-text-light);
+}
+
+.FrontBackGround {
+    transform: translateY(-10%);
+}

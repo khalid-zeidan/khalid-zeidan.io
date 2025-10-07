@@ -208,86 +208,22 @@ button:hover {
     color: var(--color-text-light);
 }
 
-/* About Section */
-.MainAboutTextBox {
+.MainTextBox {
     margin-bottom: 6.5%;
 }
 
-.MainAboutTextBox h1 {
+.MainTextBox h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
 }
 
-.MainAboutTextBox h2 {
+.MainTextBox h2 {
     font-family: var(--font-secondary);
     font-size: 2vw;
     font-weight: normal;
     font-style: normal;
     line-height: 2.75vw;
     text-align: justify;
-}
-
-/* Experience Section */
-.ExperienceContainer {
-    margin-bottom: 6.5%;
-}
-
-.ExperienceContainer h1 {
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
-}
-
-.ExperienceGrid {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    align-items: center;
-}
-
-.ExperienceContainer hr {
-    border: 0;
-    border-top: 1px solid #444;
-    margin: 1.5rem 0;
-}
-
-.ExperienceGrid h2.Experience {
-    font-family: var(--font-secondary);
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2vw;
-    line-height: 2rem;
-}
-
-.ExperienceGrid .GridInfo {
-    font-family: var(--font-mono);
-    font-weight: lighter;
-    font-style: normal;
-    font-size: 1rem;
-    line-height: 2rem;
-}
-
-/* Languages Section */
-.LanguagesGrid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    margin-top: 3rem;
-}
-
-.LanguageCont {
-    background-color: var(--color-bg-button);
-    border-radius: 2rem;
-}
-
-.LanguageText {
-    font-family: var(--font-secondary);
-    font-weight: bold;
-    font-style: normal;
-    color: var(--color-text-light);
-    font-size: small;
-    margin: 0;
-    padding: 0 1.5rem;
-    line-height: 2.5rem;
 }
 
 /* --- Footer --- */
@@ -315,28 +251,4 @@ p.Footer {
     width: 45%;
     margin-top: 1em;
     margin-left: 1em;
-}
-
-/* --- Media Queries --- */
-@media (max-width: 1080px) {
-    .ProjectLinkWrapper {
-        width: 100%;
-        height: 75vw;
-        border-radius: 7vw;
-    }
-
-    .ProjectContent {
-        padding: 4vw;
-        border-radius: 7vw;
-    }
-
-    .ProjectContent h2 {
-        font-size: 6vw;
-        margin-bottom: 3vw;
-    }
-
-    .ProjectContent p {
-        font-size: 4vw;
-        line-height: 6vw;
-    }
 }

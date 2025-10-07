@@ -12,21 +12,36 @@ h1.Front, h2.Front{
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+
+    margin-bottom: 5em;
 }
 
 .ProjectCardCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     border-radius: 2rem;
     overflow: hidden;
     cursor: pointer;
 
     transition: 0.4s;
+    z-index: 0;
     background-size: cover;
     background-position: 50%;
     height: 25em;
+
+    filter: brightness(65%);
+}
+
+.ProjectCardText{
+    mix-blend-mode: difference;
 }
 
 .ProjectCardCont:hover{
     transform: scale(1.25);
+    z-index: 10;
+    filter: brightness(100%);
 }
 
 .div1 { 
@@ -37,7 +52,6 @@ h1.Front, h2.Front{
     grid-area: 1 / 3 / 2 / 5; 
     background-image: url(images/Programming/plants-vs-zombies.png);
 }
-
 .div3 { 
     grid-area: 1 / 5 / 2 / 7; 
     background-image: url(images/Programming/multiplayer\ fps.png);

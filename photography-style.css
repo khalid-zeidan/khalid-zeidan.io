@@ -1,18 +1,18 @@
 /* --- Hero --- */
 
-h1.Front, h2.Front{
+.Front{
     color: var(--color-text-light);
+    margin-top: 0.75%;
 }
 
 .FrontBackGround {
-    transform: translateY(-10%);
+    transform: translateY(-21%);
 }
 
 /* --- Projects --- */
 .ProjectsGridCont{
     display: flex;
     gap: 1em;
-    /* background-color: antiquewhite; */
 }
 
 .ProjectsGrid{
@@ -36,11 +36,9 @@ h1.Front, h2.Front{
 
     height: auto;
     width: 100%;
-    filter: brightness(65%);
 }
 
 .ProjectCardCont:hover{
     transform: scale(1.25);
     z-index: 10;
-    filter: brightness(100%);
 }

@@ -1,0 +1,46 @@
+/* --- Hero --- */
+
+h1.Front, h2.Front{
+    color: var(--color-text-light);
+}
+
+.FrontBackGround {
+    transform: translateY(-10%);
+}
+
+/* --- Projects --- */
+.ProjectsGridCont{
+    display: flex;
+    gap: 1em;
+    /* background-color: antiquewhite; */
+}
+
+.ProjectsGrid{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.ProjectCardCont{
+    background-color: antiquewhite;
+    
+    border-radius: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+
+    transition: 0.4s;
+    z-index: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    height: auto;
+    width: 100%;
+    filter: brightness(65%);
+}
+
+.ProjectCardCont:hover{
+    transform: scale(1.25);
+    z-index: 10;
+    filter: brightness(100%);
+}

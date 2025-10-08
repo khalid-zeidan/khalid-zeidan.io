@@ -1,3 +1,5 @@
+/* --- Hero --- */
+
 h1.Front, h2.Front{
     color: var(--color-text-light);
 }
@@ -5,6 +7,8 @@ h1.Front, h2.Front{
 .FrontBackGround {
     transform: translateY(-10%);
 }
+
+/* --- Projects --- */
 
 .ProjectsGrid{
     display: grid;
@@ -58,7 +62,7 @@ h1.Front, h2.Front{
 }
 .div4 { 
     grid-area: 2 / 1 / 3 / 4; 
-    background-image: url(images/Programming/Hide\ and\ seek\ game.png);
+    background-image: url(images/Programming/Hide\ and\ seek\ game.jpg);
 }
 .div5 { 
     grid-area: 2 / 4 / 3 / 7; 

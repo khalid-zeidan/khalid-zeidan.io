@@ -21,8 +21,6 @@
 }
 
 .ProjectCardCont{
-    background-color: antiquewhite;
-    
     border-radius: 2rem;
     overflow: hidden;
     cursor: pointer;

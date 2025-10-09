@@ -142,12 +142,15 @@ button:hover {
 
 .HeaderGradient {
     position: fixed;
-    top: -50%;
+    top: -7%;
     width: 100%;
     opacity: 0.45;
     pointer-events: none;
+
+    transform-origin: top; 
     transform: scale(1, 0.2);
     -webkit-user-drag: none;
+    z-index: 999;
 }
 
 /* --- Navigation --- */

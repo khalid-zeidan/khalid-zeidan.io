@@ -53,6 +53,12 @@ button:hover {
     background-color: var(--color-bg-button-hover);
 }
 
+hr{
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 1.5rem 0;
+}
+
 /* --- Noise Overlay --- */
 .Noise {
     position: fixed;
@@ -198,7 +204,7 @@ button:hover {
 }
 
 .NavMore{
-    transition: 0.4s;
+    transition: 0.75s;
     cursor: pointer;
     background-color: var(--color-bg-button);
     border-radius: 2em;
@@ -212,6 +218,10 @@ button:hover {
 .NavMore.rotated{
     transform: rotate(45deg);
     background-color: var(--color-bg-light-gray);
+}
+
+.NavMore.rotated:hover{
+    background-color: var(--color-bg-button);
 }
 
 #MenuLinks{
@@ -258,10 +268,10 @@ button:hover {
 
 .MainTextBox h2 {
     font-family: var(--font-secondary);
-    font-size: 2vw;
+    font-size: 1.5rem;
     font-weight: normal;
     font-style: normal;
-    line-height: 2.75vw;
+    line-height: 2rem;
     text-align: justify;
 }
 

@@ -29,7 +29,7 @@
     line-height: 2rem;
 }
 
-.ExperienceGrid .GridInfo {
+.GridInfo {
     font-family: var(--font-mono);
     font-weight: lighter;
     font-style: normal;

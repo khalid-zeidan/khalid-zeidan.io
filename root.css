@@ -181,7 +181,7 @@ button:hover {
     line-height: 2.5rem;
 }
 
-.NavHomeCont{
+.NavIconCont{
     display: flex;
 }
 
@@ -195,6 +195,40 @@ button:hover {
 
 .NavHome:hover{
     background-color: var(--color-bg-button-hover);
+}
+
+.NavMore{
+    transition: 0.4s;
+    cursor: pointer;
+    background-color: var(--color-bg-button);
+    border-radius: 2em;
+    padding: 0.5rem;
+}
+
+.NavMore:hover{
+    background-color: var(--color-bg-button-hover);
+}
+
+.NavMore.rotated{
+    transform: rotate(45deg);
+    background-color: var(--color-bg-light-gray);
+}
+
+#MenuLinks{
+    margin-left: -1em;
+    display: flex;
+    gap: 1em;
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+
+    transition: 0.3s ease-out;
+}
+
+#MenuLinks.openMenu {
+    margin-left: 0em;
+    max-width: 500px; 
+    opacity: 1;
 }
 
 /* --- Main Content Body --- */

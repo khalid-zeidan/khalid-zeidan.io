@@ -13,7 +13,7 @@ h1.Front, h2.Front{
 .ProjectsGrid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 2fr repeat(3, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 
@@ -69,30 +69,30 @@ h1.Front, h2.Front{
 }
 
 .ProjectLinkWrapper.div1 { 
-    grid-area: 1 / 1 / 3 / 3;
+    grid-area: 1 / 1 / 3 / 4;
     background-size: auto 120%;
     background-position: center 100%;
     background-image: url(images/Programming/Black-Hole-Hero.jpg);
 }
 .ProjectLinkWrapper.div2 {
-    grid-area: 1 / 3 / 3 / 5;
+    grid-area: 1 / 4 / 3 / 7;
     background-position: 60%;
     background-image: url(images/Programming/plants-vs-zombies.png);
 }
 .ProjectLinkWrapper.div3 { 
-    grid-area: 1 / 5 / 3 / 7;
+    grid-area: 3 / 3 / 5 / 5;
     background-size: auto 110%;
     background-position: center 320%;
     background-image: url(images/Programming/multiplayer\ fps.png);
 }
 .ProjectLinkWrapper.div4 { 
-    grid-area: 3 / 1 / 6 / 4;
+    grid-area: 3 / 1 / 5 / 3;
     background-size: auto 110%;
     background-position: center 320%;
     background-image: url(images/Programming/Hide\ and\ seek\ game.jpg);
 }
 .ProjectLinkWrapper.div5 { 
-    grid-area: 3 / 4 / 6 / 7; 
+    grid-area: 3 / 5 / 5 / 7;
     background-size: auto 110%;
     background-position: center 320%;
     background-image: url(images/Programming/CubieMarathon.png);

@@ -1,8 +1,4 @@
 /* Experience Section */
-.MainTextBox{
-    margin-bottom: 8%;
-}
-
 .ExperienceContainer {
     margin-bottom: 5%;
 }
@@ -39,7 +35,7 @@
 .LanguagesGrid {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 0.5em;
     margin-top: 3rem;
 }
 

@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.ExperienceGrid h2 {
+.ExperienceGrid h2.Experience {
     font-family: var(--font-secondary);
     font-weight: normal;
     font-style: normal;

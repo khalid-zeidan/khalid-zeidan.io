@@ -41,6 +41,9 @@ h1.Front, h2.Front{
     cursor: pointer;
 
     transition: 0.4s;
+
+    margin: 0;
+    padding: 0;
 }
 
 .ProjectLinkWrapper:hover{
@@ -51,8 +54,11 @@ h1.Front, h2.Front{
 
 .ProjectContent{
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
+
+    padding: 2em;
 
     background-color: var(--color-text-dark);
     width: 100%;
@@ -90,4 +96,11 @@ h1.Front, h2.Front{
     background-size: auto 110%;
     background-position: center 320%;
     background-image: url(images/Programming/CubieMarathon.png);
+}
+
+.ProjectContent p{
+    font-family: var(--font-mono);
+    line-height: 1.5rem;
+    font-weight: normal;
+    font-style: normal;
 }

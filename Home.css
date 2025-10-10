@@ -30,27 +30,3 @@
     font-size: 1rem;
     line-height: 2rem;
 }
-
-/* Languages Section */
-.LanguagesGrid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em;
-    margin-top: 3rem;
-}
-
-.LanguageCont {
-    background-color: var(--color-bg-button);
-    border-radius: 2rem;
-}
-
-.LanguageText {
-    font-family: var(--font-secondary);
-    font-weight: bold;
-    font-style: normal;
-    color: var(--color-text-light);
-    font-size: small;
-    margin: 0;
-    padding: 0 1.5rem;
-    line-height: 2.5rem;
-}

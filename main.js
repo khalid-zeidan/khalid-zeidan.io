@@ -6,7 +6,7 @@ function generateNavBar(){
                 <img src="images/home-icon.svg" alt="home-icon" class="NavHome">
             </a>
 
-            <a href="/programming-projects.html">
+            <a href="/programming.html">
                 <button class="NavButton"><h2 class="NavText">programming</h2></button>
             </a>
 

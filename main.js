@@ -2,15 +2,15 @@ function generateNavBar(){
     return `
         <nav class="NavBarContainer">
         <div class="NavGrid">
-            <a href="khalid-zeidan.io/index.html" class="NavIconCont">
+            <a href="/khalid-zeidan.io/index.html" class="NavIconCont">
                 <img src="images/home-icon.svg" alt="home-icon" class="NavHome">
             </a>
 
-            <a href="khalid-zeidan.io/programming.html">
+            <a href="/khalid-zeidan.io/programming.html">
                 <button class="NavButton"><h2 class="NavText">programming</h2></button>
             </a>
 
-            <a href="khalid-zeidan.io/photography.html">
+            <a href="/khalid-zeidan.io/photography.html">
                 <button class="NavButton"><h2 class="NavText">photography</h2></button>
             </a>
             

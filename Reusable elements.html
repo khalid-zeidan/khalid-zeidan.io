@@ -1,6 +1,4 @@
-function generateNavBar(){
-    return `
-        <nav class="NavBarContainer">
+<nav class="NavBarContainer">
         <div class="NavGrid">
             <a href="/index.html" class="NavIconCont">
                 <img src="images/home-icon.svg" alt="home-icon" class="NavHome">
@@ -30,30 +28,13 @@ function generateNavBar(){
                 </button></a>
             </div>
         </div>
-    </nav>
-    `;
-}
-
-window.onload = () =>{
-    const navPlaceHolder = document.getElementById("navPlaceHolder");
-
-    if(navPlaceHolder){
-        navPlaceHolder.innerHTML = generateNavBar();
-    }
-
-    const toggleButton = document.getElementById("navToggleButton");
-    const navSVG = document.querySelector(".NavMore");
-    const menuLinks = document.getElementById("MenuLinks");
+</nav>
 
 
-    if(toggleButton && navSVG && menuLinks){
-        toggleButton.addEventListener('click', () =>
-        {
-            navSVG.classList.toggle('rotated');
-            menuLinks.classList.toggle('openMenu');
-        })
-    }
-    else {
-        console.error("Could not find all required elements (button, svg, or menuLinks).");
-    }
-}
+<footer class="Footer">
+    <div class="FooterGrid">
+        <p class="Footer">&copy; 2025 Khalid Zeidan - All rights reserved</p>
+        <p class="Footer">v1.0.0 last updated 2025-10-10</p>
+    </div>
+    <img src="images/khalid-zeidan.png" alt="khalid zeidan text" class="footerIMG">
+</footer>

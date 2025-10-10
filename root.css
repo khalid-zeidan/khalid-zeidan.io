@@ -306,6 +306,7 @@ p.Footer {
 }
 
 .footerIMG {
+    user-select: none;
     width: 45%;
     margin-top: 1em;
     margin-left: 1em;

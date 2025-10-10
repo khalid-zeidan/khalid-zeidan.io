@@ -41,7 +41,7 @@ function generateFooter(){
             <p class="Footer">&copy; 2025 Khalid Zeidan - All rights reserved</p>
             <p class="Footer">v1.0.0 last updated 2025-10-10</p>
         </div>
-        <img src="images/khalid-zeidan.png" alt="khalid zeidan text" class="footerIMG">
+        <img src="images/khalid-zeidan.png" alt="khalid zeidan text" draggable="false" class="footerIMG">
     </footer>
     `;
 }

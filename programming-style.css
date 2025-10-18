@@ -110,3 +110,36 @@ h1.Front, h2.Front{
 .ProjectContent h2.MainBodyText{
     font-size: 2vw;
 }
+
+@media screen and (max-width: 768px) {
+
+    .ProjectsGrid{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+    }
+
+    .ProjectLinkWrapper{
+        height: 35vh;
+    }
+
+    .ProjectContent p{
+        font-family: var(--font-mono);
+        line-height: 1.2rem;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+
+        font-size: 1rem;
+    }
+
+    .ProjectContent h2.MainBodyText{
+        font-size: 2rem;
+    }   
+
+    .ProjectLinkWrapper:hover{
+        transform: scale(1);
+        z-index: 0;
+    }
+}

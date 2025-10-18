@@ -39,3 +39,17 @@
     transform: scale(1.25);
     z-index: 10;
 }
+
+
+@media screen and (max-width: 768px) {
+
+    .ProjectsGridCont{
+        flex-direction: column;
+    }
+
+    .ProjectCardCont:hover{
+        transform: scale(1);
+        z-index: 1;
+    }
+
+}

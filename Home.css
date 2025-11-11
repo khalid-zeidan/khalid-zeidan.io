@@ -30,3 +30,10 @@
     font-size: 1rem;
     line-height: 2rem;
 }
+
+@media screen and (max-width: 768px) {
+    .ExperienceGrid h2.Experience {
+        font-size: 3.75vw;
+        line-height: 2rem;
+    }
+}

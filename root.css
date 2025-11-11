@@ -293,7 +293,7 @@ hr{
 }
 
 p.Footer {
-    margin-top: 4em;
+    margin-top: 5.5em;
     margin-left: 1em;
     margin-right: 1em;
     
@@ -314,6 +314,19 @@ p.Footer {
 
 
 @media screen and (max-width: 768px) {
+    .FrontTextBox .Front {
+        font-size: 12vw;
+        margin-bottom: -1vw;
+    }
+    .FrontTextBox h2.Front {
+        font-size: 5vw;
+    }
+
+    .MainTextBox h2 {
+        font-size: 5vw;
+        line-height: 6vw;
+    }
+
     .MainBody{
         padding-top: 5rem;
         padding-left: 1rem;
@@ -325,5 +338,11 @@ p.Footer {
         margin-left: auto;
         margin-right: auto;
         width: 85vw;
+    }
+
+    .Footer {
+        margin-top: -2.5rem;
+        font-size: 2.25vw;
+        height: 65vw;
     }
 }

@@ -258,6 +258,7 @@ hr{
 }
 
 .MainTextBox {
+    color: var(--color-text-light);
     margin-bottom: 6.5%;
 }
 
@@ -328,11 +329,25 @@ p.Footer {
     .FrontTextBox h2.Front {
         font-size: 5vw;
     }
+    
+    .MainTextBox h1 {
+        line-height: 2rem;
+    }
+
+
+    .MainTextBox h1 {
+        font-size: 4rem;
+    }
 
     .MainTextBox h2 {
-        font-size: 5vw;
-        line-height: 6vw;
+        font-size: 1.25rem;
     }
+
+    .MainBody{
+        padding-top: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    } 
 
     .MainBody{
         padding-top: 5rem;

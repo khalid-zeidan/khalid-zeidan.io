@@ -14,7 +14,7 @@ function generateNavBar(){
                 <button class="NavButton"><h2 class="NavText">photography</h2></button>
             </a>
             
-            <button class="NavIconCont" id="navToggleButton">
+            <button class="NavIconCont more" id="navToggleButton">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF" class="NavMore"><path d="M412-412H222q-29 0-48.5-20.2T154-480q0-29 19.5-48.5T222-548h190v-191q0-27.6 20.2-47.8Q452.4-807 480-807q27.6 0 47.8 20.2Q548-766.6 548-739v191h190q29 0 48.5 19.5t19.5 48q0 28.5-19.5 48.5T738-412H548v190q0 27.6-20.2 47.8Q507.6-154 480-154q-27.6 0-47.8-20.2Q412-194.4 412-222v-190Z"/></svg>
             </button>
 
@@ -39,7 +39,7 @@ function generateFooter(){
     <footer class="Footer">
         <div class="FooterGrid">
             <p class="Footer">&copy; 2025 Khalid Zeidan - All rights reserved</p>
-            <p class="Footer">v1.0.2 last updated 11-11-2025</p>
+            <p class="Footer">v1.0.3 last updated 12-11-2025</p>
         </div>
         <img src="images/khalid-zeidan.png" alt="khalid zeidan text" draggable="false" class="footerIMG">
     </footer>

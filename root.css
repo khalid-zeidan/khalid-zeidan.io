@@ -65,8 +65,8 @@ hr{
     inset: 0;
     mix-blend-mode: color-dodge;
     opacity: 0.65;
-    height: 100vh;
-    width: 100%;
+    height: 100%;
+    width: auto;
     animation: shake 0.5s steps(3) infinite;
     pointer-events: none;
     z-index: 1000;
@@ -314,6 +314,10 @@ p.Footer {
 
 
 @media screen and (max-width: 768px) {
+    .NavIconCont.more{
+        display: none;
+    }
+
     .FrontTextBox .Front {
         font-size: 12vw;
         margin-bottom: -1vw;

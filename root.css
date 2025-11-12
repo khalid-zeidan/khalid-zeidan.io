@@ -317,6 +317,9 @@ p.Footer {
     .NavIconCont.more{
         display: none;
     }
+    #MenuLinks.openMenu{
+        display: none;
+    }
 
     .FrontTextBox .Front {
         font-size: 12vw;

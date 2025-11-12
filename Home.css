@@ -3,11 +3,6 @@
     margin-bottom: 5%;
 }
 
-/* .ExperienceContainer h1 {
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
-} */
-
 .ExperienceGrid {
     display: flex;
     justify-content: space-between;

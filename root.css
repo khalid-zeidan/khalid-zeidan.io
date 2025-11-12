@@ -259,7 +259,7 @@ hr{
 
 .MainTextBox {
     color: var(--color-text-light);
-    margin-bottom: 6.5%;
+    margin-bottom: 3.75rem;
 }
 
 .MainTextBox h1 {
@@ -344,13 +344,7 @@ p.Footer {
     }
 
     .MainBody{
-        padding-top: 5rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    } 
-
-    .MainBody{
-        padding-top: 5rem;
+        padding-top: 6rem;
         padding-left: 1rem;
         padding-right: 1rem;
     }

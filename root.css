@@ -291,12 +291,13 @@ hr{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 p.Footer {
     margin-top: 5.5em;
-    margin-left: 1em;
-    margin-right: 1em;
     
     width: auto;
     height: auto;
@@ -330,10 +331,9 @@ p.Footer {
         font-size: 5vw;
     }
     
-    .MainTextBox h1 {
+    .MainTextBox{
         line-height: 2rem;
     }
-
 
     .MainTextBox h1 {
         font-size: 4rem;

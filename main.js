@@ -39,7 +39,7 @@ function generateFooter(){
     <footer class="Footer">
         <div class="FooterGrid">
             <p class="Footer">&copy; 2025 Khalid Zeidan - All rights reserved</p>
-            <p class="Footer">v1.0.3 last updated 12-11-2025</p>
+            <p class="Footer">v1.0.4 last updated 12-11-2025</p>
         </div>
         <img src="images/khalid-zeidan.png" alt="khalid zeidan text" draggable="false" class="footerIMG">
     </footer>
